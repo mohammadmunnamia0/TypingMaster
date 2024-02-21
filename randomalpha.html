@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Random Alphabets</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+
+    <main>
+
+        <section  class="main-container grid justify-center items-center w-">
+
+            <section class="allshaps ml-11 px-11 ">
+
+                <div id="HideOnClick" class="card card-compact grid justify-center items-center mt-80 ">
+                     <div class="card-actions">
+                            <button onclick="play()" id="HideBtn" class="btn btn-primary">Click To Start Game</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ------------------------ -->
+
+            <section>
+
+                <section id="showOnClick" class=" hidden">
+
+                    <section class="border-gray-950 border-2 p-4 mx-80 my-5 rounded-md  bg-white shadow-xl flex justify-center items-center">
+    
+                        <div id="CurrentAlphabetOnScreen" class=" border-2 flex justify-center items-center artboard artboard-horizontal phone-2 font-extrabold text-9xl">
+
+                        </div>
+    
+                    </section>
+    
+                    <section class="mt-10">
+    
+    
+                        <div class="flex justify-center gap-1 my-1 w-full">
+                            <kbd id="q" class="kbd">q</kbd>
+                            <kbd id="w" class="kbd">w</kbd>
+                            <kbd id="e" class="kbd">e</kbd>
+                            <kbd id="r" class="kbd">r</kbd>
+                            <kbd id="t" class="kbd">t</kbd>
+                            <kbd id="y" class="kbd">y</kbd>
+                            <kbd id="u" class="kbd">u</kbd>
+                            <kbd id="i" class="kbd">i</kbd>
+                            <kbd id="o" class="kbd">o</kbd>
+                            <kbd id="p" class="kbd">p</kbd>
+                        </div>
+                        <div class="flex justify-center gap-1 my-1 w-full">
+                            <kbd id="a" class="kbd">a</kbd>
+                            <kbd id="s" class="kbd">s</kbd>
+                            <kbd id="d" class="kbd">d</kbd>
+                            <kbd id="f" class="kbd">f</kbd>
+                            <kbd id="g" class="kbd">g</kbd>
+                            <kbd id="h" class="kbd">h</kbd>
+                            <kbd id="j" class="kbd">j</kbd>
+                            <kbd id="k" class="kbd">k</kbd>
+                            <kbd id="l" class="kbd">l</kbd>
+                        </div>
+                        <div class="flex justify-center gap-1 my-1 w-full">
+                            <kbd id="z" class="kbd">z</kbd>
+                            <kbd id="x" class="kbd">x</kbd>
+                            <kbd id="c" class="kbd">c</kbd>
+                            <kbd id="v" class="kbd">v</kbd>
+                            <kbd id="b" class="kbd">b</kbd>
+                            <kbd id="n" class="kbd">n</kbd>
+                            <kbd id="/" class="kbd">/</kbd>
+                        </div>
+    
+                    </section>
+    
+                    <!-- score -->
+    
+                    <section id="score"  class="grid gap-6 justify-center items-center">
+
+                        <div class="stats border-2 grid justify-between mt-10 shadow-inner px-40 shadow-red-300 bg-red-300">
+
+                            <div class="stat bg-red-500 rounded-xl">
+                                <div class="stat-desc text-center font-bold text-xl ">
+                                    Life: <span id="LifePoint">5</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stat  bg-lime-500 rounded-xl">
+                                <div class="stat-desc text-center font-bold text-xl">
+                                    Point: <span id="ScorePoint">0</span>
+                                </div>
+                            </div>
+
+                        </div>
+        
+                    </section>
+
+                
+                </section>
+
+                      <!-- Game Over -->
+ 
+                 <section id="Final-Score" class="hidden flex mt-60 justify-center items-center">
+
+                        <div class = "stats shadow  bg-red-600">
+                            <div class="stat text-center ">
+                              <div class="stat-value text-center "> Game Over </div>
+                              <div class="stat-value text-center "> Score:<span id="GameFinalScore">0</span></div>
+                              <div class="stat-desc text-center ">Better Luck Next Time</div>
+                              <button onclick="play()" class="btn">Play Again</button>
+                            </div>
+                            
+                          </div>
+            
+                </section>
+                
+            </section>   
+
+        </section>
+
+        
+
+    </main>
+
+    <script src="/randomalpha.js"></script>
+</body>
+
+</html>
